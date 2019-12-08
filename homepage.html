@@ -23,7 +23,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><span "></span> Home</a>				
+				<a class="navbar-brand" href="index.html"><span "></span> Home</a>
 			</div>
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -31,7 +31,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="about.html"><span ></span> About Us</a>				
+				<a class="navbar-brand" href="about.html"><span ></span> About Us</a>
 			</div>
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -39,49 +39,57 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="homepage.html"><span ></span> Booking</a>				
+				<a class="navbar-brand" href="homepage.html"><span ></span> Booking</a>
 			</div>
-		
-		
+
+
 		<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="signup.html"><span ></span> Register</a>				
+				<a class="navbar-brand" href="signup.html"><span ></span> Register</a>
 			</div>
-		
+
 		<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="customersignin.html"><span ></span> Login</a>				
+				<a class="navbar-brand" href="customersignin.html"><span ></span> Login</a>
 			</div>
-			
+
 				<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="showHistory.php"><span ></span> History</a>				
+				<a class="navbar-brand" href="showHistory.php"><span ></span> History</a>
 			</div>
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#" id="logout">Sign out</a>
+		</div>
 		</div>
 
 	</nav>
 	<div id="main-jumbo" class="jumbotron text-center">
-		<h1>Airbus</h1> 
-		<p>We make you Fly!</p> 
+		<h1>Airbus</h1>
+		<p>We make you Fly!</p>
 	</div>
 
 	<div class="container" id="homepage">
 		<h1><b>Search Flights</b></h1>
 		<br />
 		<p><b>Choose your flight option</b></p>
-		<div class="btn-group btn-group-justified">			
+		<div class="btn-group btn-group-justified">
 			<div class="btn-group">
 			<button id="button1" type="button" href="#oneway" class="btn">One-way</button>
 			</div>
@@ -111,30 +119,30 @@
 			    <label for="depart">Depart:</label>
 			    <input type="date" class="form-control" id="depart" name="depart" required>
 			  </div>
-		  </div>   
+		  </div>
 		   <div class="row">
 		   <hr >
 		  <div class="col-sm-6">
 		    <label for="class">Class:</label>
 		    <select class="form-control" name="class">
 		      <option value="Economy">Economy</option>
-		      <option value="Business">Business</option>   
+		      <option value="Business">Business</option>
 		    </select>
-		  </div> 
-		  </div> 
+		  </div>
+		  </div>
 		  <br>
 		  <div class="row">
-		  <div class="col-sm-6"> 
+		  <div class="col-sm-6">
 		    <label class="radio-inline">
 		      <input type="radio" name="stop" value="nonstop" checked>Non-Stop
 		    </label>
 		    <label class="radio-inline">
 		      <input type="radio" name="stop" value="1stop">1 Stop
 		    </label>
-		  </div> 
-		  </div> 
+		  </div>
+		  </div>
 		  <br>
-		  <div class="btn-group btn-group-justified">	
+		  <div class="btn-group btn-group-justified">
 				<div class="btn-group">
 					<button id="sub-btn" type="submit" class="btn btn-success">Submit</button>
 				</div>
@@ -148,7 +156,7 @@
 
 	<div id="roundtrip">
 		<form role="form" action="SearchResultRoundtrip.php" method="post">
-			 <div class="row"> 
+			 <div class="row">
 			  <div class="col-sm-6">
 			    <label for="from">From:</label>
 			    <input type="text" class="form-control" id="from" name="from" placeholder="Code " required>
@@ -159,33 +167,33 @@
 			  </div>
 			 </div>
 			 <hr >
-			<div class="row">  
+			<div class="row">
 			  <div class="col-sm-6">
 			    <label for="depart">Depart:</label>
 			    <input type="date" class="form-control" id="depart" name="depart" required>
-			  </div>  
+			  </div>
 			  <div class="col-sm-6">
 			    <label for="return">Return:</label>
 			    <input type="date" class="form-control" id="return" name="return" required>
 			  </div>
 			 </div>
 			 <hr >
-			 <div class="row">   
+			 <div class="row">
 			  <div class="col-sm-6">
 			    <label for="class">Class:</label>
 			    <select class="form-control" name="class">
 			      <option value="Economy">Economy</option>
-			      <option value="Business">Business</option>   
+			      <option value="Business">Business</option>
 			    </select>
-			  </div> 
+			  </div>
 			 </div>
 			 <br>
-			  <div class="form-group"> 
+			  <div class="form-group">
 			    <label class="radio-inline">
 			      <input type="radio" name="stop" value="nonstop" checked>Non-Stop
-			    </label>   
-			  </div> 
-			  <div class="btn-group btn-group-justified">	
+			    </label>
+			  </div>
+			  <div class="btn-group btn-group-justified">
 				<div class="btn-group">
 					<button id="sub1"type="submit" class="btn btn-success">Submit</button>
 				</div>
@@ -197,30 +205,30 @@
 	</div>
 	<div id="all">
 		<form role="form" action="SearchResultAll.php" method="post">
-			 <div class="row"> 
+			 <div class="row">
 			  <div class="col-sm-6">
 			  <label for="selectdate">Select a date:</label>
 			  <input type="date" class="form-control" id="selectdate" name="selectdate" required>
 			  </div>
 			 </div>
 			 <br>
-			<div class="row">   
+			<div class="row">
 			  <div class="col-sm-6">
 			  <button id="show" type="submit" class="btn btn-primary">Show ALL</button>
 			  </div>
-			</div> 
+			</div>
 			</form>
 
-	</div>	
+	</div>
 
-	</div>	
+	</div>
 
-	
+
 	<footer id="main-footer" class="container-fluid text-center">
 		<a href="#signUpPage" title="To Top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
 		</a>
-		<p>Airbus</p>		
+		<p>Airbus</p>
 	</footer>
 </body>
 </html>
