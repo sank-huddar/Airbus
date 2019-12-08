@@ -11,10 +11,10 @@
 	<link rel="stylesheet" href="AdminSignin.css">
 	<script  src="jquery-1.9.1.min.js"></script>
 	<script src="Admin.js"></script>
-	
+
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav id="main-nav"class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -22,25 +22,62 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="homepage.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+				<a class="navbar-brand" href="index.html"><span "></span> Home</a>
 			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="homepage.html"><span class="glyphicon glyphicon-user"> Sign out&nbsp;</span>						</a>
-						
-					</li>
-				</ul>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="about.html"><span ></span> About Us</a>
+			</div>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="homepage.html"><span ></span> Booking</a>
+			</div>
+
+
+		<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="signup.html"><span ></span> Register</a>
+			</div>
+
+		<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="customersignin.html"><span ></span> Login</a>
+			</div>
+
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="showHistory.php"><span ></span> History</a>
 			</div>
 		</div>
+
 	</nav>
-	<div class="jumbotron text-center">
-		<h1>Airprice.com</h1> 
-		<p>We specialize in your air plan!</p> 
+	<div id="main-jumbo" class="jumbotron text-center">
+		<h1>Airbus</h1>
+		<p>We make you Fly!</p>
 	</div>
 
 	<div class="container">
-		
+
 		<div class="btn-group btn-group-justified">
 			<div class="btn btn-primary" id="a">Add</div>
 			<div class="btn btn-primary" id="u">Update</div>
@@ -53,9 +90,9 @@
 				<label class="control-label col-sm-2" for="flightno2">Flight No.</label>
 				<div class="col-sm-6">
 					<input type="flightno" class="form-control" id="flightno2" placeholder="" name="flightno">
-					
+
 				</div>
-				
+
 			</div>
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="airplaneid2">Airplane ID</label>
@@ -120,9 +157,9 @@
 					<input type="bprice" class="form-control" id="bprice2" placeholder="" name="bprice">
 				</div>
 			</div>
-			
+
 			<br />
-			<div class="form-group">        
+			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-6">
 					<input type = "button" class="btn btn-primary btn-block" name="btn-submit" id="ad" value = "submit" />
 				</div>
@@ -135,7 +172,7 @@
 				<label class="control-label col-sm-2" for="number">Flight No.</label>
 				<div class="col-sm-6">
 					<input type="flightno" class="form-control" name="number" id="number" placeholder="">
-					
+
 				</div>
 				<div class="col-sm-2">
 					<input type="button" class="btn btn-success btn-block" name="search" id="search" value = "search flight" />
@@ -147,16 +184,16 @@
 				<label class="control-label col-sm-2" for="flightno">Flight No.</label>
 				<div class="col-sm-6">
 					<input type="flightno" class="form-control" id="flightno1" placeholder="" name="flightno">
-					
+
 				</div>
-				
+
 			</div>
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="airplaneid">Airplane ID</label>
 				<div class="col-sm-6">
 					<input type="airplaneid" class="form-control" id="airplaneid1" placeholder="" name="airplaneid">
 				</div>
-				
+
 				<label class="control-label col-sm-1" for="dairportdetail" id="ud1" ><font color="gray">details</font></label>
 				<div class="col-sm-3" id = "detail1">
 				</div>
@@ -164,7 +201,7 @@
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="departure">Departure Airport</label>
 				<div class="col-sm-6">
-					<input type="departure" class="form-control" id="departure1" placeholder="" name="departure"> 
+					<input type="departure" class="form-control" id="departure1" placeholder="" name="departure">
 				</div>
 				<label class="control-label col-sm-1" for="dairportdetail" id="ud2" ><font color="gray">details</font></label>
 				<div class="col-sm-3" id = "udetail2">
@@ -215,9 +252,9 @@
 					<input type="bprice" class="form-control" id="bprice1" placeholder="" name="bprice">
 				</div>
 			</div>
-			
+
 			<br />
-			<div class="form-group">        
+			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-6">
 					<input type = "button" class="btn btn-primary btn-block" value="Update" id="up" />
 					<input type = "button" class="btn btn-primary btn-block" value="Delete" id="de" />
@@ -226,16 +263,16 @@
 		</form>
 		</div>
 		<div id = "delete">
-	
+
 	    </div>
 		<br /><br /><br />
-	</div>	
-	
+	</div>
+
 	<footer class="container-fluid text-center">
 		<a href="#signUpPage" title="To Top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
 		</a>
-		<p>Airprice.com</p>		
+		<p>Airprice.com</p>
 	</footer>
 </body>
 </html>

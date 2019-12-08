@@ -18,74 +18,74 @@
  </head>
 <body>
 
-<nav id="main-nav"class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="homepage.html"><span "></span> Home</a>               
-            </div>
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="homepage.html"><span ></span> About Us</a>                
-            </div>
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="homepage.html"><span ></span> Booking</a>             
-            </div>
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="homepage.html"><span ></span> Promotions</a>              
-            </div>
-        
-        <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="signup.html"><span ></span> Register</a>              
-            </div>
-        
-        <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="customersignin.html"><span ></span> Login</a>             
-            </div>
-        </div>
-
-    </nav>
-
-    <div id="main-jumbo" class="jumbotron text-center">
-        <h1>Airbus</h1> 
-        <p>We specialize in your air plan!</p> 
-    </div>
+  <nav id="main-nav"class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><span "></span> Home</a>
+			</div>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="about.html"><span ></span> About Us</a>
+			</div>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="homepage.html"><span ></span> Booking</a>
+			</div>
 
 
-<div class="container-fluid text-center">    
+		<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="signup.html"><span ></span> Register</a>
+			</div>
+
+		<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="customersignin.html"><span ></span> Login</a>
+			</div>
+
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="showHistory.php"><span ></span> History</a>
+			</div>
+		</div>
+
+	</nav>
+	<div id="main-jumbo" class="jumbotron text-center">
+		<h1>Airbus</h1>
+		<p>We make you Fly!</p>
+	</div>
+
+<div class="container-fluid text-center">
   <div class="row content">
     <div class="col-sm-2 sidenav">
 
     </div>
-    <div class="col-sm-8 text-left"> 
+    <div class="col-sm-8 text-left">
       <h1>Search Results</h1>
 
 <?php
@@ -98,10 +98,10 @@ $selectdate = $_POST["selectdate"];
 
 global $sql, $availableNumber;
 
-    $sql = "SELECT * 
-            FROM flight FL,  class C, airplane AP 
-            WHERE (FL.number = C.number) AND (FL.airplane_id = AP.ID) 
-            
+    $sql = "SELECT *
+            FROM flight FL,  class C, airplane AP
+            WHERE (FL.number = C.number) AND (FL.airplane_id = AP.ID)
+
             ORDER BY FL.number";
 
 
@@ -144,28 +144,28 @@ while($row = mysqli_fetch_array($result)) {
     echo "<td>" . $row['name'] . "</td>";
     echo "<td>" . $row['capacity'] . "</td>";
     echo "<td>" . $row['price'] . "</td>";
-    
-   
+
+
         //calculate number of remain seats
         $seatreserved = "SELECT flightno, classtype, COUNT(*)
                     FROM book B
                     WHERE B.date = '".$selectdate."' AND B.flightno = '".$row['number']."'AND B.classtype ='".$row['name']."' AND paid=1
                     GROUP BY flightno, classtype";
-        $reserved = mysqli_query($con, $seatreserved);   
+        $reserved = mysqli_query($con, $seatreserved);
         $reservedNumber = mysqli_fetch_array($reserved);
-        
+
         $capacity = mysqli_query($con, "SELECT capacity FROM class C WHERE C.number='".$row['number']."' AND C.name= '".$row['name']."'");
         $capacityNumber = mysqli_fetch_array($capacity);
 
 
-        if(mysqli_num_rows($reserved)>0){            
+        if(mysqli_num_rows($reserved)>0){
             $availableNumber = $capacityNumber['capacity'] - $reservedNumber['COUNT(*)'];
         }else{
             $availableNumber = $capacityNumber['capacity'];
         }
-    
+
         echo "<td>".$availableNumber."</td>";
-    
+
     if($availableNumber>0){
     echo '<td>
         <form action="shoppingcart.php" method="post">
@@ -180,7 +180,7 @@ while($row = mysqli_fetch_array($result)) {
     }else{
         echo "<td><button type='button' class='btn btn-warning' onclick='myFunction()'>Not Available</button></td>";
     }
-    
+
     echo "</tr>";
 }
 echo " </tbody></table>";
@@ -192,9 +192,9 @@ echo " </tbody></table>";
 
 mysqli_close($con);
 ?>
- 
+
     </div>
-    
+
   </div>
 </div>
 
@@ -202,7 +202,7 @@ mysqli_close($con);
         <a href="#signUpPage" title="To Top">
             <span class="glyphicon glyphicon-chevron-up"></span>
         </a>
-        <p>Airbus</p>       
+        <p>Airbus</p>
     </footer>
 </body>
 </html>

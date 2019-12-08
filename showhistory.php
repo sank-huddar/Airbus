@@ -37,76 +37,76 @@ $user = $_SESSION['user'];
   <script src="jump.js"> </script>
 </head>
 <body>
- <nav id="main-nav"class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html"><span "></span> Home</a>				
-			</div>
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="about.html"><span ></span> About Us</a>				
-			</div>
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="homepage.html"><span ></span> Booking</a>				
-			</div>
-		
-		
-		<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="signup.html"><span ></span> Register</a>				
-			</div>
-		
-		<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="customersignin.html"><span ></span> Login</a>				
-			</div>
-			
-				<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="showHistory.php"><span ></span> History</a>				
-			</div>
-		</div>
-
-	</nav>
-	<div id="main-jumbo" class="jumbotron text-center">
-		<h1>Airbus</h1> 
-		<p>We make you Fly!</p> 
-	</div>
+  <nav id="main-nav"class="navbar navbar-default navbar-fixed-top">
+ 		<div class="container">
+ 			<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="index.html"><span "></span> Home</a>
+ 			</div>
+ 			<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="about.html"><span ></span> About Us</a>
+ 			</div>
+ 			<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="homepage.html"><span ></span> Booking</a>
+ 			</div>
 
 
+ 		<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="signup.html"><span ></span> Register</a>
+ 			</div>
 
-<div class="container-fluid text-center">    
+ 		<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="customersignin.html"><span ></span> Login</a>
+ 			</div>
+
+ 				<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="showHistory.php"><span ></span> History</a>
+ 			</div>
+ 		</div>
+
+ 	</nav>
+ 	<div id="main-jumbo" class="jumbotron text-center">
+ 		<h1>Airbus</h1>
+ 		<p>We make you Fly!</p>
+ 	</div>
+
+
+
+<div class="container-fluid text-center">
   <div class="row content">
     <div class="col-sm-2 sidenav">
 
     </div>
-    <div class="col-sm-8 text-left"> 
+    <div class="col-sm-8 text-left">
       <h1>Show History</h1>
 
 
@@ -121,7 +121,7 @@ include_once 'dbconnect2.php';
 
 $sql = "SELECT FL.number AS FLnumber, company, type, time, B.date,  departure, d_time, arrival, a_time, C.name AS classname, price, paid
             FROM flight FL,  class C, airplane AP , book B
-            WHERE (FL.number = C.number) AND (B.flightno = c.number) AND (classtype = C.name) AND (FL.airplane_id = AP.ID) 
+            WHERE (FL.number = C.number) AND (B.flightno = c.number) AND (classtype = C.name) AND (FL.airplane_id = AP.ID)
             AND  B.username = '$user' AND paid = '1'
             ORDER BY time";
 
@@ -136,7 +136,7 @@ $rowcount = mysqli_num_rows($result);
     echo "<div class='alert alert-info'>History:</div>";
 
 
-   
+
     echo "<table class='table table-bordered table-striped table-hover'>
           <thead>
           <tr>
@@ -170,14 +170,14 @@ $rowcount = mysqli_num_rows($result);
         if($row['paid'] == 1){
             echo "<td>YES</td>";
         }
-       
+
         echo "</tr>";
     }
     echo " </tbody></table>";
 
-   
-   
-  
+
+
+
     }
 
 
@@ -199,7 +199,7 @@ mysqli_close($con);
 
 
     </div>
-    
+
   </div>
 </div>
 
@@ -208,7 +208,7 @@ mysqli_close($con);
 		<a href="#signUpPage" title="To Top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
 		</a>
-		<p>Airbus</p>		
+		<p>Airbus</p>
 	</footer>
 
 </body>

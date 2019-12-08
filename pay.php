@@ -38,74 +38,74 @@ $user = $_SESSION['user'];
   <script src="jump.js"> </script>
 </head>
 <body>
- <nav id="main-nav"class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html"><span "></span> Home</a>				
-			</div>
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="about.html"><span ></span> About Us</a>				
-			</div>
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="homepage.html"><span ></span> Booking</a>				
-			</div>
-		
-		
-		<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="signup.html"><span ></span> Register</a>				
-			</div>
-		
-		<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="customersignin.html"><span ></span> Login</a>				
-			</div>
-			
-				<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="showHistory.php"><span ></span> History</a>				
-			</div>
-		</div>
+  <nav id="main-nav"class="navbar navbar-default navbar-fixed-top">
+ 		<div class="container">
+ 			<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="index.html"><span "></span> Home</a>
+ 			</div>
+ 			<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="about.html"><span ></span> About Us</a>
+ 			</div>
+ 			<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="homepage.html"><span ></span> Booking</a>
+ 			</div>
 
-	</nav>
-	<div id="main-jumbo" class="jumbotron text-center">
-		<h1>Airbus</h1> 
-		<p>We make you Fly!</p> 
-	</div>
 
-<div class="container-fluid text-center">    
+ 		<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="signup.html"><span ></span> Register</a>
+ 			</div>
+
+ 		<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="customersignin.html"><span ></span> Login</a>
+ 			</div>
+
+ 				<div class="navbar-header">
+ 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 					<span class="icon-bar"></span>
+ 				</button>
+ 				<a class="navbar-brand" href="showHistory.php"><span ></span> History</a>
+ 			</div>
+ 		</div>
+
+ 	</nav>
+ 	<div id="main-jumbo" class="jumbotron text-center">
+ 		<h1>Airbus</h1>
+ 		<p>We make you Fly!</p>
+ 	</div>
+
+<div class="container-fluid text-center">
   <div class="row content">
     <div class="col-sm-2 sidenav">
 
     </div>
-    <div class="col-sm-8 text-left"> 
+    <div class="col-sm-8 text-left">
       <h1>Payment Finish</h1>
       <div><img src="smile.jpg" alt="smile" id="smile">
       </div>
@@ -117,7 +117,7 @@ $user = $_SESSION['user'];
 
 include_once 'dbconnect2.php';
 
- 
+
     $sql = mysqli_query($con,"UPDATE book
             SET paid = '1'
             WHERE username = '$user'");
@@ -131,7 +131,7 @@ mysqli_close($con);
 
 
     </div>
-    
+
   </div>
 </div>
 
@@ -139,7 +139,7 @@ mysqli_close($con);
 		<a href="#signUpPage" title="To Top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
 		</a>
-		<p>Airbus</p>		
+		<p>Airbus</p>
 	</footer>
 
 
