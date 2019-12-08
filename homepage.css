@@ -1,0 +1,33 @@
+#homepage {
+	background-color:#EDFFEE ;
+	width: 800px;
+	font-size: 16px;
+	height: 600px;
+	color: #000;
+	border-radius: 15px;
+	box-shadow: 10px 10px 50px #888;
+}
+
+#button1,#button2,#button3,#res1,.hz,#check_username_availability{
+	background-color: #5A3260;
+	color:#fff;
+}
+#sub-btn,#res-btn,#sub1,#show{
+	background-color: #5A3260;
+	font-weight: bold;
+	color:#fff;
+}
+
+h4 {
+	font-weight: bold;
+}
+#main-nav{
+	background-color: #333;
+	color: #000;	
+}
+#main-jumbo{
+	background-color: #000;
+}
+#main-footer{
+	background-color: #000;
+}
